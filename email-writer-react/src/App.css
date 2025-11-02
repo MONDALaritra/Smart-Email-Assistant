@@ -1,0 +1,157 @@
+body {
+  margin: 0;
+  padding: 0;
+  background: linear-gradient(135deg, #f6f7fb 0%, #e9e8fa 100%);
+  color: #223;
+  font-family: 'Inter', 'Roboto', sans-serif;
+  min-height: 100vh;
+}
+
+/* Container: crisp white card with huge soft shadow */
+.MuiContainer-root {
+  background-color: #fff;
+  border-radius: 24px;
+  box-shadow: 0 8px 40px rgba(57, 106, 255, 0.10), 0 1.5px 9px #3ad6b015;
+  padding: 48px 36px 44px 36px;
+  margin-top: 70px;
+}
+
+/* Headings - vibrant blue */
+.MuiTypography-h4 {
+  color: #396aff;
+  font-weight: 800;
+  text-align: center;
+  margin-bottom: 28px;
+  letter-spacing: 1px;
+}
+.MuiTypography-h6 {
+  color: #3ad6b0;
+  font-weight: 700;
+}
+
+/* TextFields and input backgrounds: ultra soft white with light border */
+.MuiTextField-root {
+  background-color: #fafcff !important;
+  border-radius: 9px;
+  box-shadow: 0 2px 8px #396aff06;
+}
+
+/* Input core styling for consistency */
+.MuiInputBase-root,
+.MuiInputBase-input,
+.MuiOutlinedInput-root,
+.MuiOutlinedInput-input,
+.MuiInputBase-inputMultiline,
+.MuiOutlinedInput-inputMultiline,
+textarea {
+  background-color: #fafcff !important;
+  color: #223 !important;
+  caret-color: #396aff !important;
+  font-size: 1rem;
+  line-height: 1.7;
+}
+
+/* Outlined border and focus: blue accent */
+.MuiOutlinedInput-notchedOutline {
+  border-color: #e0e8fb !important;
+}
+.MuiOutlinedInput-root.Mui-focused .MuiOutlinedInput-notchedOutline {
+  border-color: #396aff !important;
+  box-shadow: 0 0 0 2px #396aff22;
+}
+.MuiOutlinedInput-root:hover .MuiOutlinedInput-notchedOutline {
+  border-color: #3ad6b0 !important;
+}
+
+.MuiInputLabel-root {
+  color: #7b8aab !important;
+  font-weight: 500;
+}
+.MuiInputLabel-root.Mui-focused {
+  color: #396aff !important;
+}
+
+/* Dropdown/Menu */
+.MuiSelect-select {
+  background-color: #fafcff !important;
+  color: #223 !important;
+}
+.MuiMenu-paper {
+  background-color: #fff !important;
+  color: #396aff !important;
+  border-radius: 10px;
+  box-shadow: 0 2px 14px #3ad6b022;
+}
+
+/* Buttons: gradient blue/teal and strong hover */
+.MuiButton-contained {
+  background: linear-gradient(90deg, #396aff 70%, #3ad6b0 100%) !important;
+  color: #fff !important;
+  font-weight: 800;
+  border-radius: 8px;
+  letter-spacing: 0.4px;
+  box-shadow: 0 2px 16px #396aff25;
+  transition: background 0.2s, box-shadow 0.2s;
+}
+.MuiButton-contained:hover {
+  background: linear-gradient(90deg, #3ad6b0 5%, #396aff 95%) !important;
+  box-shadow: 0 5px 18px #3ad6b035, 0 1px 8px #396aff28;
+}
+
+.MuiButton-outlined {
+  border-color: #3ad6b0 !important;
+  color: #396aff !important;
+  background: #f6f7fb !important;
+  font-weight: 700;
+  letter-spacing: 0.3px;
+  border-radius: 8px;
+  transition: all 0.2s ease;
+}
+.MuiButton-outlined:hover {
+  background: #e9e8fa !important;
+  color: #3ad6b0 !important;
+  border-color: #396aff !important;
+}
+
+/* Loader - cheerful yellow for contrast */
+.MuiCircularProgress-root {
+  color: #ffd900 !important;
+  filter: drop-shadow(0 0 7px #ffd90088);
+  background: rgba(0,0,0,0);
+}
+
+.MuiTypography-colorError {
+  color: #ea4335 !important;
+  text-align: center;
+  margin-top: 18px;
+  font-weight: 700;
+}
+
+.MuiInputBase-root.Mui-disabled, 
+.MuiInputBase-root[readonly], 
+.MuiInputBase-root input[readonly], 
+.MuiInputBase-root textarea[readonly], 
+.MuiInputBase-root.Mui-disabled input, 
+.MuiInputBase-root.Mui-disabled textarea {
+  background-color: #e9e8fa !important;
+  color: #396aff !important;
+  opacity: 1;
+  font-weight: 700;
+}
+
+.MuiButton-outlined.MuiButton-root {
+  margin-top: 18px;
+}
+
+/* Scrollbar for textarea: blue thumb */
+textarea::-webkit-scrollbar {
+  width: 7px;
+}
+textarea::-webkit-scrollbar-track {
+  background: #e9e8fa;
+}
+textarea::-webkit-scrollbar-thumb {
+  background-color: #396aff;
+  border-radius: 3px;
+  border: 2px solid #fafcff;
+}
